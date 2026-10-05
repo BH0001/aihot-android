@@ -1,0 +1,4 @@
+package: name='dev.personal.aihotreader' versionCode='5' versionName='1.0.3' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+sdkVersion:'26'
+targetSdkVersion:'36'
+application-label:'AI 热点'

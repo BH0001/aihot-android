@@ -1,4 +1,4 @@
-# AI 速览 · AIHOT Android Reader
+# AI 热点 · AIHOT Android Reader
 
 基于 [AIHOT（aihot.news）](https://aihot.news/) 网站的非官方安卓阅读器，使用 Kotlin + WebView，让手机查看 AI 资讯更方便。资讯直接来自原站，联网打开或刷新即可获取更新。
 
@@ -8,9 +8,9 @@
 
 ## 界面
 
-<img src="docs/images/home-light.png" alt="AI 速览浅色首页，Android 模拟器截图" width="260"> <img src="docs/images/home-dark.png" alt="AI 速览深色首页，Android 模拟器截图" width="260">
+<img src="docs/images/home-light.png" alt="AIHOT 浅色首页，Android 模拟器截图" width="260"> <img src="docs/images/home-dark.png" alt="AIHOT 深色首页，Android 模拟器截图" width="260">
 
-以上为模拟器实测截图，新闻内容会随原站更新。
+以上为 1.0.2 的模拟器实测截图；1.0.3 仅更改应用名称，页面布局不变。新闻内容会随原站更新。
 
 ## 功能
 
@@ -25,16 +25,18 @@
 
 ## 安装与兼容性
 
-当前版本 **1.0.2**，内部版本号 **4**，包名 `dev.personal.aihotreader`。
+当前版本 **1.0.3**，内部版本号 **5**，包名 `dev.personal.aihotreader`。
+
+本次将应用名称由「AI 速览」改为「AI 热点」，功能保持不变。包名与发布签名沿用旧版，可直接覆盖安装，保留原有收藏；不要先卸载。
 
 最低可安装系统为 Android 8.0（API 26）。网站还需要较新的 Android System WebView，系统版本达标并不代表旧 WebView 能完整运行当前网站。
 
-| 实测环境 | 验证范围 |
+| 1.0.2 历史实测环境 | 验证范围 |
 | --- | --- |
 | Android 16 / WebView 133 模拟器 | 阅读、搜索、主题、横竖屏、挖孔、键盘、收藏升级保留、文章位置恢复和断网重试 |
 | Android 8.0 / WebView 69 模拟器 | 原生布局、主题、菜单及键盘；该旧内核无法完整运行 AIHOT 网站 |
 
-实体手机、WebView 144 以上和长时间耗电表现尚未实测。首次失败与复测结果均在[验证记录](VALIDATION.md)及[脱敏证据](docs/validation/README.md)中说明。
+上述为 1.0.2 的历史验证结果，1.0.3 本次检查单独记录于[验证记录](VALIDATION.md)。实体手机、WebView 144 以上和长时间耗电表现尚未实测。历史首次失败与复测结果见[脱敏证据](docs/validation/README.md)。
 
 ## 构建
 

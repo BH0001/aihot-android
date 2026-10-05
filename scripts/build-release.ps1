@@ -2,7 +2,7 @@
 param(
     [string]$Toolchain = (Join-Path $PSScriptRoot '..\..\android-toolchain'),
     [string]$SigningProperties = (Join-Path $PSScriptRoot '..\..\aihot-private\signing.properties'),
-    [int]$VersionCode = 4
+    [int]$VersionCode = 5
 )
 $ErrorActionPreference = 'Stop'
 $projectRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))

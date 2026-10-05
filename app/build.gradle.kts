@@ -22,8 +22,8 @@ android {
         applicationId = "dev.personal.aihotreader"
         minSdk = 26
         targetSdk = 36
-        versionCode = providers.gradleProperty("appVersionCode").orElse("4").get().toInt()
-        versionName = "1.0.2"
+        versionCode = providers.gradleProperty("appVersionCode").orElse("5").get().toInt()
+        versionName = "1.0.3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

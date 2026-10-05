@@ -24,7 +24,7 @@ foreach ($required in @('VALIDATION.md','INSTALLATION.md','gradlew','gradlew.bat
 New-Item -ItemType Directory -Path $outputRoot -Force | Out-Null
 $destinationApk = Join-Path $outputRoot "$artifactName.apk"
 Copy-Item -LiteralPath $apk -Destination $destinationApk -Force
-foreach ($document in @('INSTALLATION.md','VALIDATION.md')) {
+foreach ($document in @('INSTALLATION.md','VALIDATION.md','LICENSE','THIRD_PARTY_NOTICES.md')) {
     Copy-Item -LiteralPath (Join-Path $projectRoot $document) -Destination (Join-Path $outputRoot $document) -Force
 }
 $rootFiles = @('.gitignore','.gitattributes','LICENSE','THIRD_PARTY_NOTICES.md','settings.gradle.kts','build.gradle.kts','gradle.properties','gradlew','gradlew.bat','README.md','BUILDING.md','INSTALLATION.md','VALIDATION.md','app\build.gradle.kts')
@@ -46,7 +46,7 @@ try {
 }
 finally { $archive.Dispose(); $stream.Dispose() }
 $logoZip = Join-Path $outputRoot "$artifactName-logo.zip"
-Compress-Archive -Path (Join-Path $projectRoot 'design\*') -DestinationPath $logoZip -Force
+Compress-Archive -Path (Join-Path $projectRoot 'design\*'),(Join-Path $projectRoot 'THIRD_PARTY_NOTICES.md') -DestinationPath $logoZip -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'design\logo-preview.png') -Destination (Join-Path $outputRoot 'logo-preview.png') -Force
 foreach ($name in @('home-light','home-dark','article-light','article-dark')) {
     $screen = Join-Path $projectRoot "validation\$validationPrefix-portrait-screens\$name.png"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.personal.aihotreader.NavigationPolicyTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-05T10:45:18.724Z" time="0.078">
+  <properties/>
+  <testcase name="subdomainsAndHostSuffixLookalikesLeaveApp" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.03"/>
+  <testcase name="encodedPathDoesNotChangeOrigin" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.001"/>
+  <testcase name="schemeAndDnsHostAreCaseInsensitive" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <testcase name="homeAndArticlePathsStayInApp" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <testcase name="emptyWhitespaceAndMalformedEscapesAreBlocked" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.001"/>
+  <testcase name="onlyStandardHttpsOriginStaysInApp" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <testcase name="onlyHttpAndHttpsCanReachAnExternalBrowser" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <testcase name="sharingPreservesTheExactInternalArticleAddress" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.001"/>
+  <testcase name="ipv4AndIpv6ExternalUrlsAreSupported" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <testcase name="encodedAuthoritiesAreNotTrusted" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <testcase name="userInfoNeverGrantsInternalAccess" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.001"/>
+  <testcase name="missingOrAmbiguousHostsAreBlocked" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <testcase name="sharingNeverLeaksAnExternalOrInvalidAddress" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.043"/>
+  <testcase name="invalidPortsAreBlocked" classname="dev.personal.aihotreader.NavigationPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

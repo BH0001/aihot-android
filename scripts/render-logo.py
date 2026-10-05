@@ -42,7 +42,7 @@ sheet=Image.new('RGB',(1200,660),'#F3F6F5')
 d=ImageDraw.Draw(sheet)
 font=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',28)
 small=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',19)
-d.text((52,35),'AI 速览 · 沿用 AIHOT 网站标志',fill='#173C38',font=font)
+d.text((52,35),'AI 热点 · 沿用 AIHOT 网站标志',fill='#173C38',font=font)
 for i,label in enumerate(['圆形','圆角方形','系统单色']):
     x=75+i*380
     im=Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg().encode(),output_width=280,output_height=280))).convert('RGBA')

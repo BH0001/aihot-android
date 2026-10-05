@@ -19,7 +19,7 @@
 在 PowerShell 7（`pwsh`）中执行，本项目脚本不支持系统自带的 Windows PowerShell 5.1：
 
 ```powershell
-.\scripts\build-release.ps1 -VersionCode 4
+.\scripts\build-release.ps1 -VersionCode 5
 ```
 
 脚本设置当前进程的工具路径，执行单元测试、Release Lint、Release 打包与签名校验。首次构建需要联网下载 Google/Maven Central 的依赖。下载所需的网络权限按环境规则处理。
@@ -45,7 +45,7 @@ keyPassword=<本地密码>
 
 构建时未配置正式签名会产生未签名的 Release 包，不能当作可安装交付；本项目的 `build-release.ps1` 会提前拒绝这种情况。签名密钥、密码及配置文件不应被提交或加入源码 ZIP。
 
-本次交付版本名为 `1.0.2`，内部版本号 `versionCode=4`。版本号 1 仅用于本机覆盖升级验证，没有作为成品分发。后续正式更新保持包名与签名不变，通过 `-PappVersionCode=5`（或更大整数）增加版本号。
+本次交付为「AI 热点」`1.0.3`，内部版本号 `versionCode=5`；此前应用名为「AI 速览」。版本号 1 仅用于本机覆盖升级验证，没有作为成品分发。后续正式更新保持包名与签名不变，通过 `-PappVersionCode=6`（或更大整数）增加版本号。
 
 交付归档在完成 `VALIDATION.md` 后由 `.\scripts\package-release.ps1` 生成，默认位于 `dist/<版本号>`。源码包不包含构建工具、缓存、应用数据或私钥。整理项目时已删除构建中间文件，重新打包前先构建正式 APK。
 
