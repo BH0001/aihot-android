@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI 速览</string>
+    <string name="home">回到首页</string>
+    <string name="refresh">刷新</string>
+    <string name="share">分享当前页面</string>
+    <string name="share_chooser">分享 AIHOT 页面</string>
+    <string name="offline_banner">网络已断开，已加载的内容仍可阅读</string>
+    <string name="error_title">暂时无法打开</string>
+    <string name="error_offline">当前没有可用网络。连接网络后，点击重试。</string>
+    <string name="error_connection">暂时无法连接 AIHOT。请检查网络后重试。</string>
+    <string name="error_server">AIHOT 暂时无法提供此页面（HTTP %1$d）。请稍后重试。</string>
+    <string name="error_tls">连接的安全证书无法验证，页面已停止加载。请检查手机日期与网络后重试。</string>
+    <string name="error_renderer">阅读页面已被系统关闭。点击重试即可重新打开。</string>
+    <string name="retry">重试</string>
+    <string name="no_browser">手机上没有可以打开此链接的浏览器</string>
+    <string name="no_share_app">手机上没有可以接收分享的应用</string>
+    <string name="blocked_link">暂不支持打开这种链接</string>
+    <string name="nothing_to_share">页面尚未打开，请稍后分享</string>
+    <string name="loading">正在加载页面</string>
+</resources>

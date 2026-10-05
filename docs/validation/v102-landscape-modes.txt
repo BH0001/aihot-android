@@ -1,0 +1,11 @@
+
+[x] com.android.internal.display.cutout.emulation.corner
+[ ] com.android.internal.display.cutout.emulation.double
+[ ] com.android.internal.display.cutout.emulation.hole
+[ ] com.android.internal.display.cutout.emulation.tall
+[ ] com.android.internal.systemui.navbar.threebutton
+[ ] com.android.internal.systemui.navbar.twobutton
+[ ] com.android.internal.display.cutout.emulation.emu01
+[ ] com.android.internal.display.cutout.emulation.waterfall
+[ ] com.android.internal.systemui.navbar.transparent
+[x] com.android.internal.systemui.navbar.gestural
